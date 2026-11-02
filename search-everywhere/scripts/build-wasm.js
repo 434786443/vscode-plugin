@@ -4,7 +4,7 @@ const { execFileSync } = require("node:child_process");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const openidea = process.argv[2] ?? path.join(__dirname, "..", "..", "openidea");
+const openidea = process.argv[2] ?? path.join(__dirname, "..", "..", "..", "openidea");
 const out = path.join(__dirname, "..", "vendor", "wasm");
 fs.mkdirSync(out, { recursive: true });
 execFileSync(path.join(openidea, "scripts", "build-file-search-wasm.sh"), [out], { stdio: "inherit" });

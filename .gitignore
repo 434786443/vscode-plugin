@@ -1,4 +1,19 @@
-out/
-node_modules/
+# Build output and dependencies (each extension keeps its own).
+**/out/
+**/node_modules/
+
+# Packaged extensions.
 *.vsix
+
+# Local scratch space used while developing.
 .preview/
+
+# Editor and agent state; `launch.json` stays tracked so F5 works out of the box.
+.vscode/*
+!.vscode/launch.json
+.superpowers/
+
+# OS noise.
+.DS_Store
+*.log
+*.tsbuildinfo

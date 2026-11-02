@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Extension",
+      "name": "Run Search Everywhere",
       "type": "extensionHost",
       "request": "launch",
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
-      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}/search-everywhere"],
+      "outFiles": ["${workspaceFolder}/search-everywhere/out/**/*.js"]
     }
   ]
 }
